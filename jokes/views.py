@@ -9,7 +9,7 @@ class JokeCreateView(CreateView):
     model = Joke
     fields = ['question', 'answer']
     
-    class JokeDeleteView(DeleteView):
+class JokeDeleteView(DeleteView):
     model = Joke
     success_url = reverse_lazy('jokes:list')
 
